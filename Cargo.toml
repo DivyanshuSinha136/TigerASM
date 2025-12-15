@@ -1,0 +1,46 @@
+[package]
+name = "tigerasm"
+version = "0.1.0"
+edition = "2021"
+authors = ["Divyanshu Sinha <divyanshu.sinha631@gmail.com>"]
+description = "TigerASM - Python-accessible runtime assembler for x86_64 and ARM"
+license = "MIT"
+repository = "https://github.com/yourusername/tigerasm"
+readme = "README.md"
+keywords = ["assembly", "jit", "x86_64", "compiler", "runtime"]
+categories = ["development-tools", "compilers"]
+
+[lib]
+name = "tigerasm"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+windows = { version = "0.58", features = ["Win32_Foundation", "Win32_System_Console", "Win32_UI_WindowsAndMessaging"] }
+dynasmrt = "1.2"
+dynasm = "1.2"
+
+[build-dependencies]
+pyo3-build-config = "0.20"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.dev]
+opt-level = 0
+
+# Ensure we're building for the correct architecture
+[target.x86_64-pc-windows-msvc]
+rustflags = []
+
+[target.x86_64-pc-windows-gnu]
+rustflags = []
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = []
+
+[target.x86_64-apple-darwin]
+rustflags = []
