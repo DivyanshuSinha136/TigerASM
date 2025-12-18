@@ -1,0 +1,38 @@
+site_name: TigerASM Documentation
+site_description: Ultimate Runtime Assembler for Python powered by Rust
+site_author: Divyanshu Sinha
+site_url: https://docs.tigerasm.dev
+
+
+repo_name: DivyanshuSinha136/TigerASM
+repo_url: https://github.com/DivyanshuSinha136/TigerASM
+
+
+nav:
+- Home: README.md
+
+
+theme:
+name: material
+language: en
+palette:
+- scheme: slate
+primary: orange
+accent: lime
+features:
+- navigation.instant
+- navigation.tabs
+- navigation.top
+- content.code.copy
+- content.code.annotate
+- search.highlight
+
+
+markdown_extensions:
+- admonition
+- pymdownx.highlight
+- pymdownx.superfences
+- pymdownx.details
+- pymdownx.tabbed
+- pymdownx.emoji
+link: https://github.com/Pythonaibrain-Team
