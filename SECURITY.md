@@ -18,7 +18,7 @@ We take security vulnerabilities in TigerASM seriously. Given that TigerASM gene
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please report security vulnerabilities by emailing: **[![divyanshu.sinha631@gmail.com](divyanshu.sinha631@gmail.com)]**
+Instead, please report security vulnerabilities by emailing: **[divyanshu.sinha631@gmail.com](divyanshu.sinha631@gmail.com)**
 
 Alternatively, you can use GitHub's Security Advisory feature:
 1. Navigate to the TigerASM repository
