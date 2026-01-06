@@ -655,5 +655,5 @@ This project was made possible with:
 - [dynasm-rs](https://github.com/CensoredUsername/dynasm-rs) – Dynamic assembly runtime
 
 ---
-
+[![CodeQL Advanced](https://github.com/DivyanshuSinha136/TigerASM/actions/workflows/codeql.yml/badge.svg)](https://github.com/DivyanshuSinha136/TigerASM/actions/workflows/codeql.yml)
 **Happy Assembling! 🐯⚡**
